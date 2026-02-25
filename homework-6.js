@@ -32,14 +32,14 @@ checkProperty(car);
 console.log(car.maxSpeed);
 
 // 4. Задание: Написал функцию, которая получает первым аргументом  — объект, а вторым аргументом — свойство объекта, которое нужно вывести и выводит его значение.
-function showProperty(obj,property) {
+function showProperty(obj, property) {
   if (property in obj) {
     console.log(obj[property]);
   } else { 
-  console.log("Свойство не найдено");
+    console.log("Свойство не найдено");
   }
 }
-showProperty(personalInformation,"hobby");
+showProperty(personalInformation, "hobby");
 
 // 5. Задание: Создал массив, который содержит названия продуктов 
 let products = ["horse meat", "lamb meat", "dates", "kiwi", "apple"];
@@ -91,7 +91,7 @@ let allMovies = [...movies, ...scienceFictionFilms];
 console.log(allMovies);
 
 // 8. Задание: Функция для определения редкости фильмов.
-function addRareStatus(scienceFictionFilms) {
+function getRareMovies(scienceFictionFilms) {
   return scienceFictionFilms.map((film) => {
     return {
       ...film,
@@ -99,6 +99,6 @@ function addRareStatus(scienceFictionFilms) {
     };
   });
 }
-let result = addRareStatus(scienceFictionFilms);
+let result = getRareMovies(scienceFictionFilms);
 console.log(result);
 
