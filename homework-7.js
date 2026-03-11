@@ -31,13 +31,13 @@ const commentsByPostId = comments.map(item => ({
 console.log(commentsByPostId);
 
 // 9. Задание: Оставляем в объектах только id и name.
-const commentsNames = comments.map(item => {
+const commentNames = comments.map(item => {
   return {
     id: item.id,
     name: item.name
   };
 });
-console.log(commentsNames);
+console.log(commentNames);
 
 // 10. Задание: Добавил новое свойство объектам, isInvalid и проверил length body > 180.
 const validatedComments = comments.map(item => {
@@ -57,7 +57,7 @@ const commentEmailsByMap = comments.map(item => {
 console.log(commentEmailsByReduce, commentEmailsByMap);
 
 // 12. Задание: Привел массив к строке с помощью методов toString() и join().
-const byString = commentEmailsByReduce.toString();
-console.log(byString);
-const byJoin = commentEmailsByMap.join(" - ");
-console.log(byJoin);
+const emailsByString = commentEmailsByReduce.toString();
+console.log(emailsByString);
+const emailsByJoin = commentEmailsByMap.join(" - ");
+console.log(emailsByJoin);
