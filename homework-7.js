@@ -13,8 +13,7 @@ console.log(checkResult);
 
 // 4. Задание: Универсальная функция для реверса массивов.
 function reverseArray (array) {
-  array.reverse()
-  console.log(array);
+  array.reverse();
 }
 reverseArray(numbers);
 reverseArray(furnitures);
@@ -25,44 +24,40 @@ const usersMail = comments.filter(item => item.email.includes(".com"));
 console.log(usersMail);
 
 // 8. Задание: Перебираем массив и меняем postId в зависимости от id.
-const updatedComments = comments.map(item => {
-  if(item.id <= 5) {
-    item.postId = 2;
-  } else {
-    item.postId = 1;
-  }  
-    return item;
-});
-console.log(updatedComments);
+const commentsByPostId = comments.map(item => ({
+  ...item,
+  postId: item.id <= 5 ? 2 : 1
+}));
+console.log(commentsByPostId);
 
 // 9. Задание: Оставляем в объектах только id и name.
-const onlyNameAndId = comments.map(item => {
+const commentsNames = comments.map(item => {
   return {
     id: item.id,
     name: item.name
   };
 });
-console.log(onlyNameAndId);
+console.log(commentsNames);
 
 // 10. Задание: Добавил новое свойство объектам, isInvalid и проверил length body > 180.
-const checkedComments = comments.map(item => {
+const validatedComments = comments.map(item => {
   item.isInvalid = item.body.length > 180;
   return item;
 });
 
 /* Уровень 2 
  11. Задание: Методом массива map и reduce вывел массив почт.*/
-const emailReduce = comments.reduce((acc, item)=> {
+const commentEmailsByReduce = comments.reduce((acc, item)=> {
   acc.push(item.email);
   return acc;
 }, []);
-const emailsMap = comments.map(item => {
+const commentEmailsByMap = comments.map(item => {
   return item.email
 })
-console.log(emailReduce,emailsMap);
+console.log(commentEmailsByReduce, commentEmailsByMap);
 
 // 12. Задание: Привел массив к строке с помощью методов toString() и join().
-const emailStr = emailReduce.toString()
-console.log(emailStr);
-const joinFromMap = emailsMap.join(" - ")
-console.log(joinFromMap);
+const byString = commentEmailsByReduce.toString();
+console.log(byString);
+const byJoin = commentEmailsByMap.join(" - ");
+console.log(byJoin);
