@@ -114,9 +114,10 @@ body  {
   list-style-type: circle;
 }
 
-.product-card__item  {
-   font-size: 13px;
-   margin: 5px;
+.composition-list li {
+  font-size: 13px;          
+  line-height: 18px;        
+  margin-bottom: 5px;       
 }
 
 .price-block  {
