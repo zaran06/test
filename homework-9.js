@@ -1,7 +1,7 @@
 // 4. Задание: Валидация и отправка формы подписки в футере с выводом email в консоль в виде объекта.
 const footerForm = document.getElementById("form-email");
 
-footerForm.addEventListener("submit", function(event) {
+footerForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const input = document.getElementById("user-email");
   console.log({ email: input.value });
@@ -9,28 +9,28 @@ footerForm.addEventListener("submit", function(event) {
 });
 
 // 5. Задание: Открытие модалки .modal-showed по клику (с оверлеем и центровкой в CSS) и закрытие через крестик или фон.
-const registrationButton = document.getElementById("Registration-button");
+const registrationButton = document.getElementById("registration-button");
 const modalOverlay = document.querySelector(".modal");
 const closeButton = document.querySelector(".close-btn");
 
-registrationButton.addEventListener("click", function() {
+registrationButton.addEventListener("click", () => {
   modalOverlay.classList.add("modal-showed");
 });
 
-modalOverlay.addEventListener("click", function(event) {
+modalOverlay.addEventListener("click", (event) => {
   if (event.target === modalOverlay) {
     modalOverlay.classList.remove("modal-showed");
   }
 });
 
-closeButton.addEventListener("click", function() {
+closeButton.addEventListener("click", () => {
   modalOverlay.classList.remove("modal-showed");
 });
 
 // 6. Задание: // ЗАДАНИЕ: Валидация формы регистрации (проверка паролей и checkValidity), создание объекта user с датой createdOn, вывод в консоль и закрытие модалки.
 const registrationForm = document.getElementById("registration-form");
 
-registrationForm.addEventListener("submit", function(event) {
+registrationForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const firstPassword = document.getElementById("password").value;

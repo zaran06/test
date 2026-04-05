@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body  {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -13,7 +13,7 @@ body  {
   overflow-x: hidden; 
 }
 
-.bg-dandelions  {
+.bg-dandelions {
   position: absolute;
   width: 790px;
   height: 697px;
@@ -23,7 +23,7 @@ body  {
   pointer-events: none;
 }
 
-.main-title  {
+.main-title {
   text-align: center;
   font-size: 70px;
   font-weight: 400;
@@ -33,7 +33,7 @@ body  {
   margin-bottom: 110px;
 }
 
-.buttons  {
+.buttons {
   display: flex;
   justify-content: center;
   gap: 5px;
@@ -41,11 +41,11 @@ body  {
   margin-bottom: 30px;
 }
 
-.active  {
+.active {
   background-color: lawngreen;
 }
 
-.container  {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -55,7 +55,7 @@ body  {
   max-width: 1280px;
 }
 
-.product-card  {
+.product-card {
   width: 340px;
   background: #F7F7FA;
   padding: 25px;
@@ -64,14 +64,14 @@ body  {
   flex-direction: column;
 }
 
-.card-image  {
+.card-image {
   width: 290px;
   height: 245px;
   margin-bottom: 30px;
   object-fit: cover;
 }
 
-.card-category  {
+.card-category {
   font-size: 12px;
   font-weight: 400;
   color: #A5A3B9;
@@ -79,69 +79,69 @@ body  {
   text-transform: uppercase; 
 }
 
-.card-title  {
+.card-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 27px; 
   color: #515076;
 }
 
-.card-description  {
+.card-description {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px; 
   color: #515076;
 }
 
-.composition-wrapper  {
+.composition-wrapper {
   margin-top: 15px;
   margin-bottom: 25px;
   width: 252px;
   border: 1px;
 }
 
-.composition-title  {
+.composition-title {
   font-size: 13px;
   color: #515076;
   display: block;
   margin-bottom: 5px;
 }
 
-.composition-list  {
+.composition-list {
   padding: 0;
   margin: 0;
   padding-left: 10px;
   list-style-type: circle;
 }
 
-.composition-list li  {
+.composition-list li {
   font-size: 13px;
   line-height: 18px;
   margin-bottom: 5px;
 }
 
-.price-block  {
+.price-block {
   display: flex;
   justify-content: space-between;
 }
 
-.price-label  {
+.price-label {
   font-weight: 700;
   font-size: 20px;
 }
 
-.price-value  {
+.price-value {
   font-weight: 400;
   font-size: 20px;
 }
 
-footer  {
+footer {
   background-color: #3A3A3A;
   color: #FFFFFF;
   width: 100%;
 }
 
-.footer-container  {
+.footer-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -152,7 +152,7 @@ footer  {
   box-sizing: border-box;
 }
 
-.logo-block  {
+.logo-block {
   max-width: 409px;
   width: 100%;
   display: flex;
@@ -161,7 +161,7 @@ footer  {
   margin-bottom: 42px;
 }
 
-.logo-title  {
+.logo-title {
   margin: 0;
   margin-bottom: 16px;
   font-size: 28px;
@@ -169,7 +169,7 @@ footer  {
   line-height: 1.54;
 }
 
-.logo-text  {
+.logo-text {
   margin-bottom: 42px;
   max-width: 409px;
   width: 100%;
@@ -178,7 +178,7 @@ footer  {
   line-height: 1.54;
 }
 
-.social-links  {
+.social-links {
   display: flex;
   gap: 30.5px;
   align-items: center;
@@ -189,7 +189,7 @@ footer  {
   text-decoration: none;
 }
 
-.form-block  {
+.form-block {
   max-width: 477px;
   width: 100%;
   display: flex;
@@ -201,7 +201,7 @@ footer  {
 
 }
 
-.form-title  {
+.form-title {
   width: 100%;
   text-align: left;
   font-size: 24px;
@@ -213,7 +213,7 @@ footer  {
   box-sizing: border-box;
 }
 
-#form-email  {
+#form-email {
   max-width: 477px;
   width: 100%;
   height: 61px;
@@ -226,7 +226,7 @@ footer  {
   margin: 0;
 }
 
-#form-email input  {
+#form-email input {
   flex-grow: 1;
   outline: none;
   padding-left: 36px;
@@ -237,7 +237,7 @@ footer  {
   color: #000000;
 }
 
-#Subscribe  {
+#Subscribe {
   background: transparent;
   border: none;
   border-left: 1px solid #000000; 
@@ -249,14 +249,14 @@ footer  {
   color: #000000;
 }
 
-.navigation-block  {
+.navigation-block {
   width: 178px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.navigation-title  {
+.navigation-title {
   margin: 0;
   margin-bottom: 23px;
   font-size: 20px;
@@ -269,18 +269,18 @@ footer  {
   margin: 0;
 }
 
-.footer-menu-item  {
+.footer-menu-item {
   margin-bottom: 17px;
 }
 
-.footer-menu-link  {
+.footer-menu-link {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 400;
 }
 
-.copyright-line  {
+.copyright-line {
   width: 66px;
   height: 1px;
   background-color: #FFFFFF;
@@ -288,13 +288,13 @@ footer  {
   opacity: 0.3;
 }
 
-.copyright-block  {
+.copyright-block {
   text-align: center;
   margin-top: 60px;
   padding-bottom: 28px;
 }
 
-.modal  {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -304,7 +304,7 @@ footer  {
   display: none;
 }
 
-.modal-window  {
+.modal-window {
   background-color: #FFFFFF;
   position: absolute;
   top: 50%;
@@ -314,11 +314,11 @@ footer  {
   width: 400px;
 }
 
-.modal-showed  {
+.modal-showed {
   display: block;
 }
 
-.close-btn  {
+.close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -328,10 +328,8 @@ footer  {
   cursor: pointer;
 }
 
-#registration-form  {
+#registration-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
-
