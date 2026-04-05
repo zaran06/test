@@ -28,6 +28,8 @@ closeButton.addEventListener("click", () => {
 });
 
 // 6. Задание: // ЗАДАНИЕ: Валидация формы регистрации (проверка паролей и checkValidity), создание объекта user с датой createdOn, вывод в консоль и закрытие модалки.
+let user = {};
+
 const registrationForm = document.getElementById("registration-form");
 
 registrationForm.addEventListener("submit", (event) => {
@@ -46,7 +48,7 @@ registrationForm.addEventListener("submit", (event) => {
     return;
   }
 
-  const user = {
+  user = {
     userName: document.getElementById("user-name").value,
     userSurName: document.getElementById("user-surname").value,
     birthDate: document.getElementById("birthdate").value,
