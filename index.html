@@ -47,10 +47,10 @@
 
         <div class="social-links">
           <a href="#" class="social-item-telegram">
-            <img src="images/telegram.svg" alt="Telegram">
+            <img src="images/telegram-icon.svg" alt="Telegram">
           </a>
           <a href="#" class="social-item-vk">
-            <img src="images/vk.svg" alt="Vk">
+            <img src="images/vk-icon.svg" alt="Vk">
           </a>
         </div>
       </div>
@@ -84,32 +84,27 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
+  <div class="modal" id="registration-modal">
     <div class="modal-window">
       <button class="close-btn">&times;</button>
       <h2 class="registration">Регистрация</h2>
       <form id="registration-form">
         <label for="user-name">Имя:</label>
-        <input type="text" id="user-name" placeholder="Введите Имя"required>
+        <input type="text" id="user-name" name="firstName" placeholder="Введите Имя"required>
         <label for="user-surname">Фамилия:</label>
-        <input type="text" id="user-surname" placeholder="Введите Фамилию"required>
+        <input type="text" id="user-surname" name="lastName" placeholder="Введите Фамилию"required>
         <label for="birthdate">Дата рождения:</label>
-        <input type="date" id="birthdate" placeholder="Введите дату рождения"required>
+        <input type="date" id="birthdate" name="birthDate" placeholder="Введите дату рождения"required>
         <label for="login">Логин:</label>
-        <input type="text" id="login" placeholder="Введите логин"required>
+        <input type="email" id="login" name="email" placeholder="Введите логин"required>
         <label for="password">Пароль:</label>
-        <input type="password" id="password" placeholder="Введите пароль"required>
+        <input type="password" id="password" name="password" placeholder="Введите пароль"required>
         <label for="repeat-password">Повторите пароль:</label>
-        <input type="password" id="repeat-password" placeholder="Введите пароль"required>
+        <input type="password" id="repeat-password" name="confirmPassword" placeholder="Введите пароль"required>
         <button type="submit">Зарегистрироваться</button>
       </form>
     </div>
   </div>
-  <script src="script.js"></script>
-  <script src="homework-5.js"></script>
-  <script src="homework-6.js"></script>
-  <script src="homework-7.js" type="module"></script>
-  <script src="homework-8.js" type="module"></script>
-  <script src="homework-9.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
