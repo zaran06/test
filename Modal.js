@@ -1,10 +1,9 @@
 export class Modal {
   constructor(idModalWindow) {
     this.modal = document.getElementById(idModalWindow);
-    const closeButton = this.modal.querySelector(".close-btn");
-    closeButton.addEventListener("click", () => {
-      this.close();
-    });
+    this.closeButton = this.modal.querySelector(".close-btn");
+    this.handleClose = () => this.close();
+    this.initClose();
   }
 
   open() {
@@ -17,5 +16,11 @@ export class Modal {
 
   isOpen() {
     return this.modal.classList.contains("modal-showed");
+  }
+
+  initClose() {
+    if (this.closeButton) {
+      this.closeButton.addEventListener("click", this.handleClose);
+    }
   }
 }

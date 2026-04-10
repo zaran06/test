@@ -22,19 +22,3 @@ const myBlogger = new Blogger("Иннокентий", 100);
 
 myBlogger.status();
 myBlogger.createPost();
-
-class Admin extends User {
-  constructor(name, role) {
-    super(name)
-    this.role = role;
-  }
-
-  deletePost() {
-    console.log(`Администратор ${this.name} (роль: ${this.role}) удалил пост.`);
-  }
-}
-
-const myAdmin = new Admin("Андрей", "Superuser");
-
-myAdmin.status();
-myAdmin.deletePost();
