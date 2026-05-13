@@ -16,22 +16,24 @@ if (savedUsers === null) {
 
 async function loadUsers() {
   statusMessage.textContent = "Данные загружаются";
-  await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  try {
-    const response = await fetch("users.json");
+  setTimeout(async () => {
+    try {
+      const response = await fetch("users.json");
 
-    if (!response.ok) {
-      throw new Error("Ошибка при загрузке данных");
+      if (!response.ok) {
+        throw new Error("Ошибка при загрузке данных");
+      }
+
+      const users = await response.json();
+
+      localStorage.setItem("users", JSON.stringify(users));
+      statusMessage.textContent = "";
+      renderCards(users);
+    } catch (error) {
+      statusMessage.textContent = error.message;
     }
-
-    const users = await response.json();
-    localStorage.setItem("users", JSON.stringify(users));
-    statusMessage.textContent = "";
-    renderCards(users);
-  } catch (error) {
-    statusMessage.textContent = error.message;
-  }
+  }, 2000);
 }
 
 function renderCards(usersArray) {
@@ -58,7 +60,7 @@ function renderCards(usersArray) {
 }
 
 deleteAllcardsButton.addEventListener("click", () => {
-  localStorage.clear();
+  localStorage.removeItem("users");
   cardsContainer.innerHTML = "";
 });
 
