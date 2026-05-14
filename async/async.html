@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./async.css" />
+  </head>
+  <body>
+    <p class="status-download">Данные загружаются...</p>
+    <div class="controls">
+      <button id="get-all-cards-button">Получить все карточки</button>
+      <button id="delete-all-cards-button">Удалить все карточки</button>
+    </div>
+    <div class="users-container"></div>
+    <template id="user-card-template">
+      <div class="user-card">
+        <button class="user-delete-button">х</button>
+        <p class="user-id"></p>
+        <p class="user-name"></p>
+        <p class="user-surname"></p>
+        <p class="user-email"></p>
+        <p class="user-age"></p>
+      </div>
+    </template>
+    <script src="async.js"></script>
+  </body>
+</html>
